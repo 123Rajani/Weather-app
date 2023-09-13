@@ -23,7 +23,7 @@ export class LocalStorageHandlerService {
 
     isExpired(cached_data: any){
         const currentTime = Date.now();
-        return (currentTime - cached_data[0].fetched_time >= 5 * 2 * 1000);
+        return (currentTime - cached_data[0].fetched_time >= 5 * 60 * 1000);
     };
 
 }
